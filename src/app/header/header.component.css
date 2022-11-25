@@ -1,0 +1,129 @@
+.main-header {    
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+    
+}
+
+.main-header__title {    
+    font-size: 80px;
+    letter-spacing: -1.5px;    
+}
+
+.main-header__title--blue {
+    color: var(--blue);
+    color: blue;
+    font-size:60px;
+}
+
+.main-header__title--orange {
+    color: var(--orange);
+    color: orange;
+    font-size:60px;
+}
+
+.main-header__menu ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-header__menu a {
+    padding: 10px 10px;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex: 1;
+}
+
+.badge-carrinho {
+    background-color: var(--dark-blue);
+    padding: 5px 10px;    
+    border-radius: 4px;
+    color: white;
+}
+.menuMobile {
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+ }
+.mm-line {
+	height: 4px;
+	background-color: black;
+}
+
+@media (max-width:768px){
+    .main-header__title--blue {
+        font-size:50px;
+    }
+    
+    .main-header__title--orange {
+        font-size:50px;
+    }
+    .main-header__menu a {
+        font-size: 20px;
+    }
+    .badge-carrinho {
+        padding: 3px 7px;  
+    }
+}
+
+@media (max-width: 600px) {
+    .container-menu  nav {
+		
+		display: none;
+		width: 100%;
+		left: 0;
+		background-color: white;
+		bottom: 220px;
+	
+	}
+    .container-menu  nav ul {
+        flex-direction: column;
+    }
+    .container-menu  nav ul li {
+       padding-bottom: 10px;
+    }
+    .menuMobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	} 
+}
+@media (max-width: 426px){
+    .main-header__title--blue {
+        font-size:40px;
+    }
+    
+    .main-header__title--orange {
+        font-size:40px;
+    }
+}
+@media (min-width: 320px) and (max-width: 405px) {
+    .main-header {
+        display: block;
+    }
+    .main-header__title--blue {
+        font-size:37px;
+    }
+    
+    .main-header__title--orange {
+        font-size:37px;
+    }
+}
